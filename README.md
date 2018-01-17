@@ -5,13 +5,17 @@ To run this project locally, make sure to: `yarn install or npm install` and `ya
 
 _This is the final project for The Udacity Google Scholarship!_ 
 
-## Basic Requirements
+## Course Requirements
 - Dynamically set the size of the table as an N by M grid.
 - Choose a color.
 - Click a cell in the grid to fill that cell with the chosen color.
 - Implement a `makeGrid()` function, that dynamically creates a grid that the user can interact with.
+- Implement while and for loops to clear and create the grid dynamically
 
-_As an extra challenge to myself, I am going to code this with vanilla JS (as opposed to jQuery) and will not begin with the starter files that the course provides._
+#### My Added Personal Challenges
+- Code project with vanilla JS (as opposed to jQuery)
+- Do not use starter files the course provides
+- Use CSS Grid for layout (using FlexBox for grid items is ok)
 
 ## The Journey of My Project
 
