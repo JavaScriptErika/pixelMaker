@@ -136,4 +136,16 @@ summary {
   display: list-item; }
 
 body {
-  background-color: blue; }
+  font-family: 'PT Sans', sans-serif;
+  color: #eee;
+  background-color: #090909; }
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin-top: 5rem; }
+
+header {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px; }
