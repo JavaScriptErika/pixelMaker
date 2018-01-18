@@ -69,14 +69,21 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_sass__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_sass__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_design_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__js_design_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__js_design_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_sass__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__app_sass__);
 
 
-console.log("hello!");
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+console.log('it works!')
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

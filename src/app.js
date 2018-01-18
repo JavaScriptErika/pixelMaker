@@ -1,3 +1,2 @@
-import './styles.sass'
-
-console.log("hello!");
+import './js/design.js'
+import './app.sass'

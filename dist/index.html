@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pixel Art Maker</title>
-<link href="styles.css?585a6840940704887378" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Press+Start+2P" rel="stylesheet">
+<link href="styles.css?d9be193b103a09ff4427" rel="stylesheet"></head>
 <body>
-    <h1>Testing!!!!</h1>
-<script type="text/javascript" src="./bundle.js?585a6840940704887378"></script></body>
+    <div class='container'>
+        <header>
+            <h1>pixel art maker</h1>
+        </header>
+
+        <section>
+            <div>
+                <h3>choose grid dimensions:</h3>
+            </div>
+            <div class='grid-dimensions'>
+                <div class='grid-input'>
+                    <label for='columns'>columns</label>
+                    <input id='columns' type="number" min='1' max='300' value='10'>
+                </div>
+                <div class='grid-input'>
+                    <label for='rows'>rows</label>
+                    <input id='rows' type="number" min='1' max='300' value='10'>
+                </div>
+                <div class='grid-btn'>
+                    <button>Blast off!</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3>choose a color:</h3>
+            </div>
+            <div class='.color-input grid-dimensions'>
+                <div>
+                    <label for='color'>pixel hue</label>
+                    <input id='color' type='color' value='#5e35b1'>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <h3>make something cool:</h3>
+            <div>
+            </div>
+        </main>
+
+    </div>
+<script type="text/javascript" src="./bundle.js?d9be193b103a09ff4427"></script></body>
 </html>
