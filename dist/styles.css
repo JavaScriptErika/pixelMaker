@@ -1,7 +1,5 @@
 html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  line-height: 1.15; }
 
 body {
   margin: 0; }
@@ -144,8 +142,28 @@ body {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  grid-gap: 1.5rem; }
 
 header {
   font-family: 'Press Start 2P', cursive;
   font-size: 32px; }
+
+.grid-dimensions {
+  display: flex;
+  justify-content: space-evenly; }
+
+.grid-input,
+.grid-btn {
+  align-self: flex-end; }
+
+label {
+  display: block;
+  margin-bottom: 0.8rem; }
+
+.color-input .grid-dimensions {
+  flex-direction: column; }
+
+#color {
+  width: 5rem;
+  height: 2rem; }

@@ -10,32 +10,46 @@
 <body>
     <div class='container'>
         <header>
-            <h1>Pixel Art Maker</h1>
+            <h1>pixel art maker</h1>
         </header>
+
         <section>
             <div>
-                <h3>Choose Grid Dimensions:</h3>
-                <div>
-                    <label for='columns'>Columns</label>
+                <h3>choose grid dimensions:</h3>
+            </div>
+            <div class='grid-dimensions'>
+                <div class='grid-input'>
+                    <label for='columns'>columns</label>
                     <input id='columns' type="number" min='1' max='300' value='10'>
                 </div>
-                <div>
-                    <label for='rows'>Rows</label>
+                <div class='grid-input'>
+                    <label for='rows'>rows</label>
                     <input id='rows' type="number" min='1' max='300' value='10'>
                 </div>
-                <div>
+                <div class='grid-btn'>
                     <button>Blast off!</button>
                 </div>
             </div>
+        </section>
+
+        <section>
             <div>
-                <h3>Pick a Color:</h3>
+                <h3>choose a color:</h3>
+            </div>
+            <div class='.color-input grid-dimensions'>
+                <div>
+                    <label for='color'>pixel hue</label>
+                    <input id='color' type='color' value='#5e35b1'>
+                </div>
             </div>
         </section>
+
         <main>
-            <h3>Design Canvas</h3>
+            <h3>make something cool:</h3>
             <div>
             </div>
         </main>
+
     </div>
 </body>
 </html>
