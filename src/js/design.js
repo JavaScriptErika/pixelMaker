@@ -1,24 +1,34 @@
-(function iife() {
+var gridColumns = document.getElementById('columns');
+var gridRows = document.getElementById('rows');
+var gridButton = document.getElementById('grid-btn');
+var gridTable = document.getElementById('grid-canvas');
+var tableRows = document.getElementsByTagName('tr');
 
-// set the size of the cross stitch canvas as an N by M grid with the makeGrid() function
-const makeGrid = () => {
-    var gridColumns = document.getElementById('columns').value;
-    var gridRows = document.getElementById('rows').value;
-    var gridButton = document.getElementById('grid-btn');
-    var gridTable = document.getElementById('grid-canvas')
-    var row;
 
-    gridButton.addEventListener('click', function(){
-        for(let i = 0; i < gridRows; i++) {
-            row = gridTable.insertRow(i)
-            for(let j = 0; j < gridColumns; j++) {
-                row.insertCell(j)
-            }
-        }
-    });
-    console.log(gridColumns, gridRows)
+
+
+var makeGrid = () => {
+    let gridRowsValue = gridRows.value;
+    let gridColumnsValue = gridColumns.value;
+    tableRows.length !== 0 ? removeRows() : addRowsAndColumns(gridRowsValue, gridColumnsValue);
 }
 
-makeGrid();
 
-})();
+var removeRows = () => {
+    while(tableRows.length > 0) {
+        tableRows[0].remove();
+    }
+    makeGrid();
+}
+
+var addRowsAndColumns = (gridRowsValue, gridColumnsValue) => {
+    let addRow;
+    for(let row = 0; row < gridRowsValue; row++) {
+        addRow = gridTable.insertRow(row);
+        for(let columns = 0; columns < gridColumnsValue; columns++) {
+            addRow.insertCell(columns);
+        }
+    }
+}
+
+gridButton.addEventListener('click', makeGrid, false);
