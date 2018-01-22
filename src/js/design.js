@@ -1,10 +1,10 @@
-var gridColumns = document.getElementById('columns');
-var gridRows = document.getElementById('rows');
-var gridButton = document.getElementById('grid-btn');
-var gridTable = document.getElementById('grid-canvas');
-var tableRows = document.getElementsByTagName('tr');
 var colorInput = document.getElementById('color');
 var colorInputValue = colorInput.value;
+var gridButton = document.getElementById('grid-btn');
+var gridColumns = document.getElementById('columns');
+var gridRows = document.getElementById('rows');
+var gridTable = document.getElementById('grid-canvas');
+var tableRows = document.getElementsByTagName('tr');
 
 var makeGrid = () => {
     let gridRowsInputValue = gridRows.value;
