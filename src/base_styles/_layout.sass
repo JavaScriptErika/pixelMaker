@@ -6,9 +6,12 @@ body
 .container
     display: grid
     grid-template-columns: auto
-    justify-content: center
-    margin-top: 5rem
     grid-gap: 1.5rem
+    margin-top: 5rem
+    text-align: center
+    @media (min-width: 1440px)
+        justify-content: center
+        text-align: left
 
 header
     font-family: 'Press Start 2P', cursive
@@ -17,6 +20,11 @@ header
 .content-layout
     display: flex
     justify-content: space-evenly
+
+.grid-dimensions
+    @media (min-width: 768px)
+        margin: 0 auto
+        width: 30rem
 
 .grid-input,
 .grid-btn
