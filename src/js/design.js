@@ -1,25 +1,24 @@
 var colorInput = document.getElementById('color');
-var colorInputValue = colorInput.value;
 var gridButton = document.getElementById('grid-btn');
 var gridColumns = document.getElementById('columns');
 var gridRows = document.getElementById('rows');
 var gridTable = document.getElementById('grid-canvas');
 var tableRows = document.getElementsByTagName('tr');
 
-var makeGrid = () => {
+var clearAndMakeGrid = () => {
     let gridRowsInputValue = gridRows.value;
     let gridColumnsInputValue = gridColumns.value;
-    tableRows.length !== 0 ? clearGrid() : addRowsAndColumns(gridRowsInputValue, gridColumnsInputValue);
+    tableRows.length !== 0 ? clearGrid() : makeGrid(gridRowsInputValue, gridColumnsInputValue);
 }
 
 var clearGrid = () => {
     while(tableRows.length > 0) {
         tableRows[0].remove();
     }
-    makeGrid();
+    clearAndMakeGrid();
 }
 
-var addRowsAndColumns = (gridRowsInputValue, gridColumnsInputValue) => {
+var makeGrid = (gridRowsInputValue, gridColumnsInputValue) => {
     let addRow;
     for(let row = 0; row < gridRowsInputValue; row++) {
         addRow = gridTable.insertRow(row);
@@ -29,7 +28,12 @@ var addRowsAndColumns = (gridRowsInputValue, gridColumnsInputValue) => {
     }
 }
 
-window.addEventListener('load', makeGrid, false);
-gridButton.addEventListener('click', makeGrid, false);
-colorInput.addEventListener('input', () => colorInputValue = colorInput.value, false);
-gridTable.addEventListener('click', (e) => e.target.nodeName === 'TD'? e.target.style.backgroundColor = colorInputValue : '', false);
+var colorPicker = (e) => {
+    let colorInputValue = colorInput.value;
+    e.target.nodeName === 'TD'? e.target.style.backgroundColor = colorInputValue : '';
+}
+
+window.addEventListener('load', clearAndMakeGrid, colorPicker, false);
+gridButton.addEventListener('click', clearAndMakeGrid, false);
+gridTable.addEventListener('click', colorPicker, false);
+colorInput.addEventListener('input', colorPicker, false);
