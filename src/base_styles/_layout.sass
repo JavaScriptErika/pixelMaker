@@ -1,44 +1,62 @@
 body
-    font-family: 'PT Sans', sans-serif
-    color: #eee
     background-color: #090909
+    color: #eee
+    font-family: 'PT Sans', sans-serif
 
-.container
-    display: grid
-    grid-template-columns: auto
-    justify-content: center
-    margin-top: 5rem
-    grid-gap: 1.5rem
+button
+    background-color: #eee
+    border-color: #eee
+    border-radius: 4px
+    font-family: 'PT Sans', sans-serif
+    padding: .3rem
 
 header
     font-family: 'Press Start 2P', cursive
     font-size: 32px
 
-.grid-dimensions
+label
+    display: block
+    margin-bottom: 0.8rem
+
+table
+    border-spacing: 0rem
+
+tr,
+td
+    border: 1px solid #232323
+    height: 7px
+    padding: 5px
+    width: 7px
+
+.container
+    display: grid
+    grid-gap: 1.5rem
+    grid-template-columns: auto
+    margin-top: 5rem
+    text-align: center
+    @media (min-width: 1440px)
+        justify-content: center
+        text-align: left
+
+.content-layout
     display: flex
     justify-content: space-evenly
+
+.grid-dimensions
+    @media (min-width: 768px)
+        margin: 0 auto
+        width: 30rem
 
 .grid-input,
 .grid-btn
     align-self: flex-end
 
-label
-    display: block
-    margin-bottom: 0.8rem
-
-.color-input .grid-dimensions
+.color-input .content-layout
     flex-direction: column
 
 #color
-    width: 5rem
     height: 2rem
+    width: 5rem
 
-table
-    border-spacing: 0rem;
-
-tr,
-td
-    width: 7px
-    height: 7px
-    padding: 5px
-    border: 1px solid #232323
+.grid-canvas-div
+    padding-bottom: 3rem

@@ -17,17 +17,17 @@
             <div>
                 <h3>choose grid dimensions:</h3>
             </div>
-            <div class='grid-dimensions'>
+            <div class='content-layout grid-dimensions'>
                 <div class='grid-input'>
                     <label for='columns'>columns</label>
-                    <input id='columns' type="number" min='1' max='300' value='10'>
+                    <input id='columns' type="number" min='1' max='50' value='10'>
                 </div>
                 <div class='grid-input'>
                     <label for='rows'>rows</label>
-                    <input id='rows' type="number" min='1' max='300' value='10'>
+                    <input id='rows' type="number" min='1' max='50' value='10'>
                 </div>
                 <div class='grid-btn'>
-                    <button id='grid-btn'>Blast off!</button>
+                    <button id='grid-btn'>blast off!</button>
                 </div>
             </div>
         </section>
@@ -36,7 +36,7 @@
             <div>
                 <h3>choose a color:</h3>
             </div>
-            <div class='.color-input grid-dimensions'>
+            <div class='color-input content-layout'>
                 <div>
                     <label for='color'>pixel hue</label>
                     <input id='color' type='color' value='#5e35b1'>
@@ -45,9 +45,12 @@
         </section>
 
         <main>
-            <h3>make something cool:</h3>
-            <table id='grid-canvas'>
-            </table>
+            <div>
+                <h3>make something cool:</h3>
+            </div>
+            <div class='content-layout grid-canvas-div'>
+                <table id='grid-canvas'></table>
+            </div>
         </main>
 
     </div>
