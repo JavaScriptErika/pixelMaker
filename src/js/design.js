@@ -29,7 +29,7 @@
         }
     }
 
-    var colorPicker = (e) => {
+    var colorPicker = e => {
         let colorInputValue = colorInput.value
         e.target.nodeName === 'TD'? e.target.style.backgroundColor = colorInputValue : ''
     }
